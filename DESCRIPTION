@@ -1,0 +1,13 @@
+Package: textmood
+Title: Evaluate the Vibes of a Text
+Version: 0.0.0.9000
+Authors@R: 
+    person("Maria", "Reina Campos", , "maria.reina.campos@ki.se", role = c("aut", "cre"))
+Description: Reads a text file, cleans it into a vector of lowercase words,
+    and compares those words to user-supplied lists of positive and negative
+    words. Itreturns the number of positive and negative words and a score that
+    shows whether the text is overall positive or negative.
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.1.1
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
