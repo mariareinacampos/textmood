@@ -2,7 +2,7 @@
 % Please edit documentation in R/simpletext.R
 \name{simpletext}
 \alias{simpletext}
-\title{Turn a text file into a vector of clean words}
+\title{SimpleText}
 \usage{
 simpletext(file_path)
 }
