@@ -13,5 +13,5 @@ matchloop(file_path)
 One list containing two character vectors. 'Positive' contains identified positive words in the text and 'negative' contains identified negative words.
 }
 \description{
-Using two refference vectors, this functions identifies positive and negative words within a given text by a loop.
+Using two reference vectors, this functions identifies positive and negative words within a given text by a loop.
 }

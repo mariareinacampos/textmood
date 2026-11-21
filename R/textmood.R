@@ -1,13 +1,12 @@
 #' Identification of negative and positive words on a text
 #'
-#' Using vectors with target words for positive
+#' Using target word vectors to identify positive or negaitve words whitin a text.
 #'
 #' @param file_path Single word vector created from provided text
-#' @param positive Refers to the vector containing positive target words. D TRUE, vector used will be the deafult. If FALSE, us
-#' @param negative Single word vector created from provided text
+#' @param positive Refers to the vector containing positive target words. If left unmentioned it will be TRUE and function will use the vector described in data. If user wants, they can provide another vector with target words.
+#' @param negative Refers to the vector containing negative target words. If left unmentioned it will be TRUE and function will use the vector described in data. If user wants, they can provide another vector with target words.
 #'
-#' @return Detected negative words and
-#'
+#' @return List containing two vectors: one with identified positive words and another with the negative ones.
 #' @export
 textmood <- function(file_path,
                      negative = negative_target,
@@ -17,9 +16,10 @@ textmood <- function(file_path,
       stop("File not found: ", file_path)
     }
   matches <- matchloop(file_path)
-  positive_count <- length(matches$positive)
-  negative_count <- length(matches$negative)
-  ratio <- if (negative_count == 0 | positive_count == 0) NA else positive_count / negative_count
-  return (list(positive = positive_count, negative = negative_count, ratio = ratio))
+  positive_matches <- matches$positive
+  negative_matches <- matches$negative
+  positive_count <- length(positive_matches)
+  negative_count <- length(negative_matches)
+  return (list(positive = positive_count, positive_matches = positive_matches, negative = negative_count, negative_matches = negative_matches, ratio = ratio))
 }
 

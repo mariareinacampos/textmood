@@ -6,8 +6,7 @@
 #'
 #' @param file_path A character string with the path to a `.txt` file.
 #'
-#' @return A character vector with one word per element. Apostrophes inside
-#'   words (e.g. "can't") are kept.
+#' @return A character vector with one word per element. Apostrophes inside words (e.g. "can't") are kept.
 #'
 #' @export
 simpletext <- function(file_path) {

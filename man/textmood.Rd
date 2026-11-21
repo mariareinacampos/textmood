@@ -9,13 +9,13 @@ textmood(file_path, negative = negative_target, positive = positive_target)
 \arguments{
 \item{file_path}{Single word vector created from provided text}
 
-\item{negative}{Single word vector created from provided text}
+\item{negative}{Refers to the vector containing negative target words. If left unmentioned it will be TRUE and function will use the vector described in data. If user wants, they can provide another vector with target words.}
 
-\item{positive}{Refers to the vector containing positive target words. D TRUE, vector used will be the deafult. If FALSE, us}
+\item{positive}{Refers to the vector containing positive target words. If left unmentioned it will be TRUE and function will use the vector described in data. If user wants, they can provide another vector with target words.}
 }
 \value{
-Detected negative words and
+List containing two vectors: one with identified positive words and another with the negative ones.
 }
 \description{
-Using vectors with target words for positive
+Using target word vectors to identify positive or negaitve words whitin a text.
 }

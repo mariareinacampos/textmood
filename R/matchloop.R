@@ -1,6 +1,6 @@
 #' Identification of negative and positive words on a text
 #'
-#' Using two refference vectors, this functions identifies positive and negative words within a given text by a loop.
+#' Using two reference vectors, this functions identifies positive and negative words within a given text by a loop.
 #'
 #' @param file_path File path to the text you want to analyze
 #'

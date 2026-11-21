@@ -10,8 +10,7 @@ simpletext(file_path)
 \item{file_path}{A character string with the path to a \code{.txt} file.}
 }
 \value{
-A character vector with one word per element. Apostrophes inside
-words (e.g. "can't") are kept.
+A character vector with one word per element. Apostrophes inside words (e.g. "can't") are kept.
 }
 \description{
 Reads a tab-delimited text file, converts everything to lowercase,
