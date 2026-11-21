@@ -9,11 +9,6 @@
 #' @return A character vector with one word per element. Apostrophes inside
 #'   words (e.g. "can't") are kept.
 #'
-#' @examples
-#' tmp <- tempfile(fileext = ".txt")
-#' writeLines("Today was great, but I can't sleep.", tmp)
-#' simpletext(tmp)
-#'
 #' @export
 simpletext <- function(file_path) {
 

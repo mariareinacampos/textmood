@@ -18,9 +18,3 @@ Reads a tab-delimited text file, converts everything to lowercase,
 standardises apostrophes, removes punctuation and splits the text into
 individual words.
 }
-\examples{
-tmp <- tempfile(fileext = ".txt")
-writeLines("Today was great, but I can't sleep.", tmp)
-simpletext(tmp)
-
-}

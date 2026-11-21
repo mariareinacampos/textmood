@@ -3,14 +3,9 @@
 #' Using two refference vectors, this functions identifies positive and negative words within a given text by a loop.
 #'
 #' @param file_path File path to the text you want to analyze
-
-#' #' @return One list containing two character vectors. 'Positive' contains identified positive words in the text and 'negative' contains identified negative words.
 #'
-#' #' @examples
-#' tmp <- tempfile(fileext = ".txt")
-#' writeLines("Today was great, but I can't sleep.", tmp)
-#' simpletext(tmp)
-
+#' @return One list containing two character vectors. 'Positive' contains identified positive words in the text and 'negative' contains identified negative words.
+#'
 #' @export
 matchloop <- function(file_path){
 
