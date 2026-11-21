@@ -12,8 +12,6 @@
 #' simpletext(tmp)
 
 #' @export
-#'
-
 matchloop <- function(file_path){
 
   if (!file.exists(file_path)) {

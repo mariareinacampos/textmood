@@ -14,8 +14,6 @@
 #' simpletext(tmp)
 
 #' @export
-#'
-
 textmood <- function(file_path,
                      negative = negative_target,
                      positive = positive_target) {
