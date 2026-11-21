@@ -20,6 +20,6 @@ textmood <- function(file_path,
   negative_matches <- matches$negative
   positive_count <- length(positive_matches)
   negative_count <- length(negative_matches)
-  return (list(positive = positive_count, positive_matches = positive_matches, negative = negative_count, negative_matches = negative_matches, ratio = ratio))
+  return (list(positive = positive_count, positive_matches = positive_matches, negative = negative_count, negative_matches = negative_matches))
 }
 
